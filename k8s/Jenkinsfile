@@ -81,6 +81,8 @@ spec:
         value: "true"
       - name: AWS_SHARED_CREDENTIALS_FILE
         value: "/kaniko/.aws/credentials"
+      - name: DOCKER_CONFIG
+        value: "/kaniko/.docker"  
     tty: true
     command: ["sleep"]
     args: ["99d"]
