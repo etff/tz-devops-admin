@@ -2,10 +2,10 @@ pipeline {
 
     environment {
         // Git Repository Information
-        GITHUP_ID = "topzone8713"
+        GITHUP_ID = "etff"
         GIT_URL = "https://github.com/${GITHUP_ID}/tz-devops-admin.git"
-        GIT_BRANCH = "devops"
-        GIT_COMMITTER_EMAIL = "topzone8713@gmail.com"
+        GIT_BRANCH = "main"
+        GIT_COMMITTER_EMAIL = "wish2rich@gmail.com"
 
         // Docker and Application Configuration
         BUILD_NUMBER = "${env.BUILD_NUMBER}"
@@ -19,10 +19,10 @@ pipeline {
         USE_ARGOCD = "true"
 
         // AWS and Kubernetes Configuration
-        ACCOUNT_ID = "084828581538"
+        ACCOUNT_ID = "spiraltap04@gmail.com"
         AWS_DEFAULT_REGION = "ap-northeast-2"
-        DOMAIN = "topzone.me"
-        CLUSTER_NAME = "topzone-k8s"
+        DOMAIN = "ezcoa.com"
+        CLUSTER_NAME = "etff-k8s"
         CERTIFICATE="aaaaaa"
 
         KUBECTL = "kubectl -n ${NAMESPACE} --kubeconfig /var/lib/jenkins/.kube/sl_${CLUSTER_NAME}"
