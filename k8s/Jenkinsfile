@@ -84,9 +84,9 @@ spec:
     args: ["99d"]
     volumeMounts:
       - name: shared-data
-        mountPath: /kaniko/.docker
+        mountPath: /root/shared-data
       - name: docker-config
-        mountPath: /root/.docker
+        mountPath: /kaniko/.docker
       - name: aws-secret
         mountPath: /kaniko/.aws
 
