@@ -140,7 +140,7 @@ spec:
                     steps {
                         container("kaniko2") {
                             script {
-                                sh "/kaniko/executor --dockerfile=Dockerfile --context=/root/shared-data/${DOCKER_NAME} --build-arg NODE_ENV=${NODE_ENV} --destination=${ACCOUNT_ID}.dkr.ecr.${env.AWS_DEFAULT_REGION}.amazonaws.com/${DOCKER_NAME}:${env.BUILD_NUMBER} --use-new-run --cleanup"
+                                sh "/kaniko/executor --dockerfile=Dockerfile --context=/root/shared-data/${DOCKER_NAME} --build-arg NODE_ENV=${NODE_ENV} --destination=${ACCOUNT_ID}.dkr.ecr.${env.AWS_DEFAULT_REGION}.amazonaws.com/${DOCKER_NAME}:${env.BUILD_NUMBER} --use-new-run --cleanup --force"
                             }
                         }
                     }
