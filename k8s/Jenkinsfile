@@ -79,6 +79,8 @@ spec:
     env:
       - name: AWS_SDK_LOAD_CONFIG
         value: "true"
+      - name: AWS_SHARED_CREDENTIALS_FILE
+        value: "/kaniko/.aws/credentials"
     tty: true
     command: ["sleep"]
     args: ["99d"]
